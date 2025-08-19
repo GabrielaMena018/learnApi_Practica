@@ -41,6 +41,7 @@ public class ImageController {
     ){
         try{
             String imageUrl = cloudinaryService.uploadImage(file,folder);
+            System.out.println("URI 1: " + imageUrl);
             return ResponseEntity.ok(Map.of(
                     "Message", "Imagen Subida exitosamente",
                     "url", imageUrl

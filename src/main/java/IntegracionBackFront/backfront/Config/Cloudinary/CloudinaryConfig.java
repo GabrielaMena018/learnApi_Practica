@@ -26,7 +26,7 @@ public class CloudinaryConfig {
         Map<String, String> config = new HashMap<>();
         config.put("cloud_name", dotenv.get("CLOUDINARY_CLOUD_NAME")); //Nombre de la nube en cloudinary
         config.put("api_key", dotenv.get("CLOUDINARY_API_KEY")); //Api ey autenticación
-        config.put("api_secret", dotenv.get("CLODINARY_API_SECRET")); //Clave secreta
+        config.put("api_secret", dotenv.get("CLOUDINARY_API_SECRET")); //Clave secreta
 
         //Retornamos una nueva instancia de LCoudinary con la configuración cargada
         return new Cloudinary(config);
